@@ -8,7 +8,7 @@ The `infra` folder contains all the code needed to create the infrastructure, pe
 
 The `src` folder contains the source code of both Consumer and Producer microsservices written in .NET 6.
 
-## Instalation and Usage
+## Instalation 
 
 Make sure you have .NET 6 and terraform installed on your machine.
 
@@ -17,12 +17,10 @@ terraform version
 dotnet --info
 ```
 
-Then just run `deploy.sh` script. and run , which will publish some events to EventBridge,which will filter then  
-
- 
+Then just run `deploy.sh` script and check for the resources created in your AWS account.
 
 ## Usage
 
-Run `producer-lambda-function` in your AWS account so that it publishes some events to EventBridge.
+Execute `producer-lambda-function` function in your AWS account so that it publishes some events to EventBridge.
 
-Then check which events `consumer-lambda-function` received and processed, according to the filtering rule created. 
+Then check which events `consumer-lambda-function` function received, according to the filtering rule created. 

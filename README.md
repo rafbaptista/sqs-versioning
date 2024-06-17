@@ -15,10 +15,11 @@ Make sure you have .NET 6 and terraform installed on your machine.
 ```
 terraform version
 dotnet --info
+```
 
 Then just run `deploy.sh` script. and run , which will publish some events to EventBridge,which will filter then  
 
-``` 
+ 
 
 ## Usage
 
